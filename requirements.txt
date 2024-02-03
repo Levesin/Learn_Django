@@ -1,0 +1,24 @@
+# Core
+faker==22.6.0
+
+# [code_style]-[BEGIN]
+
+# Pre-commit hook.
+pre-commit==3.6.0
+
+# Upgrade syntax.
+pyupgrade==3.15.0
+
+# Formatter. Apply codestyle.
+black==24.1.1
+
+# Check codestyle.
+flake8==7.0.0
+
+# Removes unused imports and unused variables.
+autoflake==2.2.1
+
+# [code_style]-[END]
+
+#core.
+django==5.0.1
