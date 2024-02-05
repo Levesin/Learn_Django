@@ -6,7 +6,7 @@ from apps.first_example.services.generate import generate_users
 
 class UsersView(TemplateView):
 
-    template_name = "generate.html"
+    template_name = "first_example/generate.html"
 
     def get_context_data(self, amount: int = 7, **kwargs) -> dict:
         context_data = super().get_context_data(**kwargs)

@@ -44,8 +44,8 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 LOCAL_APPS = [
-    "apps",
-    # "apps.first_example",
+    "apps.first_example",
+    "apps.contacts"
 ]
 THIRD_PARTY_APPS = []
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
