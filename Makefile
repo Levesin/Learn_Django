@@ -69,3 +69,8 @@ migrate:
 # Generate 50 contacts.
 django-i-generate-contacts-i-50:
 	@python manage.py generate_contacts --amount 50
+
+.PHONY: init-dev-i-create-superuser
+# Create superuser
+init-dev-i-create-superuser:
+	@DJANGO_SUPERUSER_PASSWORD=admin123 python manage.py createsuperuser --user admin --email admin@gmail.com --no-input
