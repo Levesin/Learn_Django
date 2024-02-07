@@ -1,13 +1,10 @@
+
+
 <header>
-    <ul>
-        <li>
-            <a href="{% url "root:index" %}">Start</a>
-        </li>
-        <li>
-            <a href="{% url "first_example:users" amount=5 %}"> Users </a>
-        </li>
-        <li>
-            <a href="{% url "contacts:list" %}"> Contacts </a>
-        </li>
-    </ul>
+        <div class="main-menu" >
+                <a class="btn-menu" href="{% url "root:index" %}">Start</a>
+                <a class="btn-menu" href="{% url "first_example:users" amount=5 %}"> Users </a>
+                <a class="btn-menu" href="{% url "contacts:list" %}"> Contacts </a>
+            </div>
+        </div>
 </header>

@@ -20,21 +20,29 @@
                     <span> Modified info: {{ contact.modified_at }} </span>
                 </p>
             </li>
-             <a href="{% url "contacts:update" pk=contact.id %}">
+             <a class="button-submin" href="{% url "contacts:update" pk=contact.id %}">
                     <button>
                         Edit
                     </button>
                 </a>
-                <a href="{% url "contacts:delete" pk=contact.id %}">
+                <a class="button-submin" href="{% url "contacts:delete" pk=contact.id %}">
                     <button>
                         Delete
                     </button>
                 </a>
-                <a href="{% url "contacts:details" pk=contact.id %}">
+                <a class="button-submin" href="{% url "contacts:details" pk=contact.id %}">
                     <button>
                         More details
                     </button>
                 </a>
+                {% if contact.city is not None %}
+                            <span>{{ contact.city }}</span>
+                        {% else %}
+                            <span>Unknown</span>
+                        {% endif %}
+
+                        <span> - </span>
+                        <span>{{ contact.modified_at }}</span>
         {% endfor %}
     </ol>
 {% endblock %}

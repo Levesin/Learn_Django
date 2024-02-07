@@ -1,0 +1,38 @@
+.main-menu {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.52);
+  padding: 10px;
+  border: 0;
+}
+
+.btn-menu {
+  color: #017bd2;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-menu:hover,
+.dropbtn:hover {
+  color: #d56f2e;
+}
+
+
+.button-submin {
+  text-align: center;
+  background: linear-gradient(to right, #017bd2, #d56f2e); ; /* цвет фона кнопки */
+  color: #fff; /* цвет текста кнопки */
+  padding: 6px 20px; /* отступы внутри кнопки */
+  border: none; /* удаляем границу */
+  border-radius: 5px; /* скругляем углы */
+  font-size: 16px; /* размер шрифта */
+  cursor: pointer; /* изменяем курсор при наведении на кнопку */
+}
+
+.button-submin:hover {
+  background-color: #f63e3e; /* изменяем цвет фона кнопки при наведении */
+}
