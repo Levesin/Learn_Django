@@ -11,8 +11,8 @@ class City(models.Model):
 
 
 class Contact(models.Model):
-    name = models.CharField(max_length=10)
-    phone = models.PositiveSmallIntegerField()
+    name = models.CharField(max_length=50)
+    phone = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
 
