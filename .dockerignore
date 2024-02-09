@@ -6,4 +6,5 @@
 !apps/
 !manage.py
 !requirements.txt
-!db
+!Makefile
+!docker/app/
