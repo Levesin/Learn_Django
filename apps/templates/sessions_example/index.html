@@ -1,0 +1,9 @@
+{% extends "_helpers/_base.html" %}
+
+{% block content %}
+    <p>Ваш ID: {{ session_id }}</p>
+    <p>С возвращением в : {{ count_of_visits }} раз</p>
+    <p>Время вашего предыдущего визита: {{ datetime_of_last_visit }}</p>
+    <p>Время настоящего визита: {{ date_real }} </p>
+    
+{% endblock %}

@@ -21,5 +21,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('generate/', include('apps.first_example.urls')),
     path('contacts/', include('apps.contacts.urls')),
+    path('sessions/', include('apps.sessions_example.urls')),
     path('', include('apps.first_example.urls_root'))
 ]
