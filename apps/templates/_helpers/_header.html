@@ -1,4 +1,4 @@
-
+{% load static %}
 
 <header>
         <div class="main-menu" >
@@ -7,4 +7,34 @@
                 <a class="btn-menu" href="{% url "contacts:list" %}"> Contacts </a>
                 <a class="btn-menu" href="{% url "sessions:index" %}"> Count of visit </a>
         </div>
+
+<ul>
+    {% if user.is_authenticated %}
+
+        <li class="last">
+            <p> {{ user.username }} |<a href = "{% url "logout" %}"> Logout </a></p>
+            <div class="col my-element-style">
+                <div class="user-avatar">
+                    {% if user.avatar %}
+                        <img src="{{ user.avatar.url }}" alt="Avatar" >
+                    {% else %}
+                        Add a photo
+                    {% endif %}
+                </div>
+            </div>
+            <p><a href="{% url "user:update_u" pk=user.id %}">
+                <button class="btn btn-success">
+                    Edit account
+                </button>
+            </a></p>
+        </li>
+
+
+    {% else %}
+        <li class="last">
+            <a href="{% url "login" %}" > Login </a>| <a href="{% url "user:signup" %}" > Signup users</a>
+        </li>
+    {% endif %}
+    </ul>
+
 </header>

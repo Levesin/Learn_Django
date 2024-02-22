@@ -36,3 +36,17 @@
 .button-submin:hover {
   background-color: #f63e3e; /* изменяем цвет фона кнопки при наведении */
 }
+
+.user-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
