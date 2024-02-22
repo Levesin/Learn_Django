@@ -61,11 +61,12 @@ LOCAL_APPS = [
     "apps.first_example",
     "apps.contacts",
     "apps.user",
-    "apps.sessions_example"
+    "apps.sessions_example",
 ]
 
 THIRD_PARTY_APPS = [
-
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
@@ -166,3 +167,6 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LOGIN_REDIRECT_URL = "root:index"
+LOGOUT_REDIRECT_URL = "root:index"
