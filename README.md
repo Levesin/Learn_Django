@@ -1,5 +1,5 @@
 # Hi, guys. i'm Lev :cat:
-### Student Hillel IT School, I am from Kramatorsk.
+### I am from Kramatorsk.
 ### Homework Django 
 
 ### ▶️ Run
